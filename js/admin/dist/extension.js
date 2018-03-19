@@ -1,26 +1,26 @@
 'use strict';
 
-System.register('krombox/auth/wordpress/components/WordpressSettingsModal', ['flarum/components/SettingsModal'], function (_export, _context) {
+System.register('krombox/auth/wordpress/components/WordPressSettingsModal', ['flarum/components/SettingsModal'], function (_export, _context) {
   "use strict";
 
-  var SettingsModal, WordpressSettingsModal;
+  var SettingsModal, WordPressSettingsModal;
   return {
     setters: [function (_flarumComponentsSettingsModal) {
       SettingsModal = _flarumComponentsSettingsModal.default;
     }],
     execute: function () {
-      WordpressSettingsModal = function (_SettingsModal) {
-        babelHelpers.inherits(WordpressSettingsModal, _SettingsModal);
+      WordPressSettingsModal = function (_SettingsModal) {
+        babelHelpers.inherits(WordPressSettingsModal, _SettingsModal);
 
-        function WordpressSettingsModal() {
-          babelHelpers.classCallCheck(this, WordpressSettingsModal);
-          return babelHelpers.possibleConstructorReturn(this, (WordpressSettingsModal.__proto__ || Object.getPrototypeOf(WordpressSettingsModal)).apply(this, arguments));
+        function WordPressSettingsModal() {
+          babelHelpers.classCallCheck(this, WordPressSettingsModal);
+          return babelHelpers.possibleConstructorReturn(this, (WordPressSettingsModal.__proto__ || Object.getPrototypeOf(WordPressSettingsModal)).apply(this, arguments));
         }
 
-        babelHelpers.createClass(WordpressSettingsModal, [{
+        babelHelpers.createClass(WordPressSettingsModal, [{
           key: 'className',
           value: function className() {
-            return 'WordpressSettingsModal Modal--small';
+            return 'WordPressSettingsModal Modal--small';
           }
         }, {
           key: 'title',
@@ -87,30 +87,30 @@ System.register('krombox/auth/wordpress/components/WordpressSettingsModal', ['fl
             )];
           }
         }]);
-        return WordpressSettingsModal;
+        return WordPressSettingsModal;
       }(SettingsModal);
 
-      _export('default', WordpressSettingsModal);
+      _export('default', WordPressSettingsModal);
     }
   };
 });;
 'use strict';
 
-System.register('krombox/auth/wordpress/main', ['flarum/app', 'krombox/auth/wordpress/components/WordpressSettingsModal'], function (_export, _context) {
+System.register('krombox/auth/wordpress/main', ['flarum/app', 'krombox/auth/wordpress/components/WordPressSettingsModal'], function (_export, _context) {
   "use strict";
 
-  var app, WordpressSettingsModal;
+  var app, WordPressSettingsModal;
   return {
     setters: [function (_flarumApp) {
       app = _flarumApp.default;
-    }, function (_kromboxAuthWordpressComponentsWordpressSettingsModal) {
-      WordpressSettingsModal = _kromboxAuthWordpressComponentsWordpressSettingsModal.default;
+    }, function (_kromboxAuthWordPressComponentsWordPressSettingsModal) {
+      WordPressSettingsModal = _kromboxAuthWordPressComponentsWordPressSettingsModal.default;
     }],
     execute: function () {
 
       app.initializers.add('krombox-auth-wordpress', function () {
         app.extensionSettings['krombox-auth-wordpress'] = function () {
-          return app.modal.show(new WordpressSettingsModal());
+          return app.modal.show(new WordPressSettingsModal());
         };
       });
     }

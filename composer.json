@@ -1,6 +1,6 @@
 {
     "name": "krombox/flarum-ext-auth-wordpress",
-    "description": "Allow users to log in with your Wordpress site.",
+    "description": "Allow users to log in with your WordPress site.",
     "type": "flarum-extension",
     "keywords": ["authentication"],
     "license": "MIT",
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Krombox\\Auth\\Wordpress\\": "src/"
+            "Krombox\\Auth\\WordPress\\": "src/"
         }
     },
     "extra": {        
         "flarum-extension": {
-            "title": "Wordpress Login",
+            "title": "WordPress Login",
             "icon": {
                 "name": "wordpress",
                 "backgroundColor": "#23282d",

@@ -1,8 +1,8 @@
 import SettingsModal from 'flarum/components/SettingsModal';
 
-export default class WordpressSettingsModal extends SettingsModal {
+export default class WordPressSettingsModal extends SettingsModal {
   className() {
-    return 'WordpressSettingsModal Modal--small';
+    return 'WordPressSettingsModal Modal--small';
   }
 
   title() {

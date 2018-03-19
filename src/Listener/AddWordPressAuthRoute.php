@@ -1,11 +1,11 @@
 <?php
 
-namespace Krombox\Auth\Wordpress\Listener;
+namespace Krombox\Auth\WordPress\Listener;
 
 use Flarum\Event\ConfigureForumRoutes;
 use Illuminate\Contracts\Events\Dispatcher;
 
-class AddWordpressAuthRoute
+class AddWordPressAuthRoute
 {
     /**
      * @param Dispatcher $events
@@ -20,6 +20,6 @@ class AddWordpressAuthRoute
      */
     public function configureForumRoutes(ConfigureForumRoutes $event)
     {        
-        $event->get('/auth/wordpress', 'auth.wordpress', 'Krombox\Auth\Wordpress\Controller\WordpressAuthController');
+        $event->get('/auth/wordpress', 'auth.wordpress', 'Krombox\Auth\WordPress\Controller\WordPressAuthController');
     }
 }

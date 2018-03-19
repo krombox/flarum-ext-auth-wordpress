@@ -1,4 +1,4 @@
-# Flarum Wordpress Auth Extension
+# Flarum WordPress Auth Extension
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Latest Stable Version](https://img.shields.io/packagist/v/krombox/flarum-ext-auth-wordpress.svg)](https://packagist.org/packages/krombox/flarum-ext-auth-wordpress)
 [![Total Downloads](https://img.shields.io/packagist/dt/krombox/flarum-ext-auth-wordpress.svg)](https://packagist.org/packages/krombox/flarum-ext-auth-wordpress)
@@ -15,8 +15,7 @@ composer require krombox/flarum-ext-auth-wordpress
 
 ## Prerequirements
 
-1) Wordpress >= 4.5
-2) [WP OAuth Server](https://wordpress.org/plugins/oauth2-provider/) plugin installed and [configured](https://wordpress.org/plugins/oauth2-provider/#faq)
+1) [WP OAuth Server](https://wordpress.org/plugins/oauth2-provider/) plugin installed and [configured](https://wordpress.org/plugins/oauth2-provider/#faq)
 
 ## Config
 

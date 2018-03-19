@@ -1,14 +1,14 @@
 <?php
 
-namespace Krombox\Auth\Wordpress\Controller;
+namespace Krombox\Auth\WordPress\Controller;
 
 use Flarum\Forum\AuthenticationResponseFactory;
 use Flarum\Forum\Controller\AbstractOAuth2Controller;
 use Flarum\Settings\SettingsRepositoryInterface;
-use Krombox\OAuth2\Client\Provider\Wordpress;
+use Krombox\OAuth2\Client\Provider\WordPress;
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 
-class WordpressAuthController extends AbstractOAuth2Controller
+class WordPressAuthController extends AbstractOAuth2Controller
 {
     /**
      * @var SettingsRepositoryInterface
@@ -30,7 +30,7 @@ class WordpressAuthController extends AbstractOAuth2Controller
      */
     protected function getProvider($redirectUri)
     {        
-        return  new Wordpress([
+        return  new WordPress([
             'clientId'     => $this->settings->get('krombox-auth-wordpress.client_id'),
             'clientSecret' => $this->settings->get('krombox-auth-wordpress.client_secret'),
             'domain' => $this->settings->get('krombox-auth-wordpress.domain'),

@@ -1,6 +1,6 @@
 <?php
 
-namespace Krombox\Auth\Wordpress\Listener;
+namespace Krombox\Auth\WordPress\Listener;
 
 use DirectoryIterator;
 use Flarum\Event\ConfigureWebApp;
